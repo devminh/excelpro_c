@@ -1,0 +1,30 @@
+Sheet1
+A1 4
+A2 7
+A3 1
+B1 5
+B2 8
+B3 2
+C1 6
+C2 2
+D2 =sum(sheet1!A1,sheet1!A2)
+D1 =sum(A1:B3)
+E1 =autofill(D1,false)
+E2 =sumif(sheet1!A1:sheet1!B3,'>5')
+E3 =AND(D2,D1)
+Sheet2
+A1 cho
+A2 meo
+A3 chim
+B1 1
+B2 2
+B3 abc
+B4 =vlookup("qwerty",A1:B3,3)
+C1 jhjmb
+C2 gfd
+C3 thsf
+C4 =vlookup("chim",A1:C3,3)
+Sheet3
+A1 =vlookup("lala",Sheet2!A1:Sheet2!B3,2)
+A2 =vlookup("chim",Sheet2!A1:Sheet2!C3,3)
+
